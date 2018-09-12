@@ -9,6 +9,8 @@ public class Main {
         filePalindrome.Palindrome();
         IntNumbers intNum = new IntNumbers();
         intNum.ReturnInt(1001);
+        ReplaceWithUpperCase replaceWithUpperCase = new ReplaceWithUpperCase();
+        replaceWithUpperCase.UpperCaseReplacement();
 
 
 
