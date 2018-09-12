@@ -6,7 +6,7 @@ public class ReplaceWithUpperCase {
 
         Scanner in = new Scanner(System.in);
 
-//        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
         System.out.println("Enter your phrase");
         String phrase = in.nextLine();
         String delims = "[ ]+";
@@ -14,14 +14,22 @@ public class ReplaceWithUpperCase {
 
         for (String word : words) {
 
-            if (word.length() >= 5) {
+            if  (word.length() < 5){
 
-//                stringBuilder.append(word.toUpperCase());
-                String cap = word.substring(0, 1).toUpperCase() + word.substring(1);
-                System.out.println(cap);
+                stringBuilder.append(word + " ");
+            }
 
+            else {
+                stringBuilder.append(word.substring(0, 1).toUpperCase() + word.substring(1) + " ");
 
             }
+            String completedString = stringBuilder.toString();
+            System.out.println(completedString);
+
+
+
+
+
         }
 
     }
